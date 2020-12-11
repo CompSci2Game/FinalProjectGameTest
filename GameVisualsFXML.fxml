@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="Form1MainGame" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-image: C:\Users\WIT\eclipse-workspace\finalcampinggameproject\src\application\FinalPrjctImages;" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxcontroller">
+   <children>
+      <ImageView blendMode="DARKEN" fitHeight="900.0" fitWidth="1600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../FinalPrjctImages/1.Background.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.2" />
+         </effect>
+      </ImageView>
+      <TextArea layoutX="188.0" layoutY="492.0" prefHeight="340.0" prefWidth="1200.0" scrollTop="10.0" style="-fx-border-color: 50; -fx-background-color: 50;" text="hey this is our story project&#10;hey this is our story project&#10;hey this is our story project&#10;hey this is our story project&#10;hey this is our story project&#10;hey this is our story project&#10;hey this is our story project&#10;hey this is our story project&#10;hey this is our story project&#10;hey this is our story project&#10;hey this is our story project&#10;hey this is our story project&#10;hey this is our story project&#10;hey this is our story project&#10;&#10;" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="500.0">
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" choke="0.2" />
+         </effect>
+         <font>
+            <Font name="Bookman Old Style" size="25.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="chapterImage" fitHeight="400.0" fitWidth="640.0" layoutX="499.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="420.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="80.0">
+         <effect>
+            <InnerShadow choke="0.2" />
+         </effect>
+         <image>
+            <Image url="@../FinalPrjctImages/1.Frame.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="nextbutton" layoutX="1141.0" layoutY="426.0" mnemonicParsing="false" onAction="#onClick" prefHeight="48.0" prefWidth="85.0" text="Next!" AnchorPane.bottomAnchor="426.0">
+         <font>
+            <Font name="Bookman Old Style" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</fx:root>
